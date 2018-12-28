@@ -2,7 +2,7 @@ import { Controller, Get, Post, Put, Delete, Param, Res, HttpStatus } from '@nes
 import { User } from './interfaces/user.interface';
 import { UsersService } from './services/users/users.service';
 
-@Controller('users')
+@Controller('api/v1/users')
 export class UsersController {
     constructor(private readonly usersService: UsersService) {
 }
@@ -27,19 +27,19 @@ export class UsersController {
         });
     }
     @Post()
-    async create() {
+    async create(): Promise<User> {
     // 创建用户
-    return await this.usersService.create();
+    return await this.usersService.create(user);
     }
     @Put()
     async edit() {
         // 修改用户
         return await this.usersService.edit();
      }
-    @Delete()
-    async remove() {
+    @Delete(':id')
+    async remove(@Param('id')): Promise<boolean> {
         // 删除已用户
-        return await this.usersService.remove();
+        return await this.usersService.remove(id);
     }
 
 }
