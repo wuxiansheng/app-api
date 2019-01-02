@@ -16,6 +16,6 @@ export class UsersController {
         if (isNaN(id) || typeof id !==  'number' || id <= 0 ) {
            throw new HttpException('用户编号错误', HttpStatus.BAD_REQUEST);
     }
-    return await this.usersService.findOne(id);
+        return await this.usersService.findOne(id);
  }
 }
