@@ -1,22 +1,16 @@
-import { Module } from '@nestjs/common';
+import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import {TypeOrmModule} from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ArticlesController } from './articles/articles.controller';
-import { UsersModule } from './users/users.module';
-import { RabcController } from './rabc/rabc.controller';
-import { AdminController } from './admin/admin.controller';
-import { CommentController } from './comment/comment.controller';
-import { MemberController } from './member/member.controller';
-import { AuthController } from './auth/auth.controller';
-import { CompanyController } from './company/company.controller';
-import { AdminModule } from './admin/admin.module';
-import { AuthModule } from './auth/auth.module';
-import { CommentModule } from './comment/comment.module';
-import { RabcModule } from './rabc/rabc.module';
-import { MemberModule } from './member/member.module';
-import { ArticlesModule } from './articles/articles.module';
-import { CompanyModule } from './company/company.module';
+import { UsersModule } from './pages/users/users.module';
+import { AdminModule } from './pages/admin/admin.module';
+import { AuthModule } from './pages/auth/auth.module';
+import { CommentModule } from './pages/comment/comment.module';
+import { RabcModule } from './pages/rabc/rabc.module';
+import { MemberModule } from './pages/member/member.module';
+import { ArticlesModule } from './pages/articles/articles.module';
+import { CompanyModule } from './pages/company/company.module';
+import { Loggermiddleware } from './middleware/loggermiddleware';
 
 @Module({
   imports: [UsersModule, TypeOrmModule.forRoot({
@@ -32,4 +26,8 @@ import { CompanyModule } from './company/company.module';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer.apply(Loggermiddleware);
+  }
+}

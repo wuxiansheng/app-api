@@ -10,4 +10,8 @@ export class UsersController {
         // 删除
        return await this.usersService.findAll();
     }
+    @Get('/:id')
+  async  findById(@Param('id')id): Promise<UserEntity> {
+      return await  this.usersService.findById(id);
+    }
 }

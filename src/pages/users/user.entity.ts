@@ -1,17 +1,19 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class AuthEntity {
+export  class  UserEntity {
   @PrimaryGeneratedColumn()
-  id: string
+  id: number;
   @Column()
-  username: string;
+  uid: number;
   @Column()
-  password: string;
+  nickname: string;
   @Column()
-  email: string;
+  age: string;
   @Column()
-  phone: string;
+  avatar: string;
   @Column()
-  isActive: boolean;
+  address: string;
+  @Column()
+  company: string;
 }
