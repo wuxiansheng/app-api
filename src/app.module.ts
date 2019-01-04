@@ -12,6 +12,7 @@ import { ArticlesModule } from './pages/articles/articles.module';
 import { CompanyModule } from './pages/company/company.module';
 import { Loggermiddleware } from './middleware/loggermiddleware';
 
+
 @Module({
   imports: [UsersModule, TypeOrmModule.forRoot({
     type: 'mysql',

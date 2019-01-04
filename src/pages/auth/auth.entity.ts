@@ -20,6 +20,10 @@ export class AuthEntity {
   credential: string; // accessToken
   @Column()
   credentialExpire: string; // token过期时间
+  @Column()
+  lastLoginTime: string;
+  @Column()
+  loginIp: string;
  @Column()
   status: boolean;
 }
