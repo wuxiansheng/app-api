@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed15d56-18a6-4bfc-918c-fe375cec8914" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/api.exception.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/config.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/dev.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/local.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/prod.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/test.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/filters/http-exception.filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/filters/http-exception.filter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/articles/article.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/articles/article.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/auth.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/auth.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/users/services/users/users.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/users/users.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/users/services/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/users/users.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/users/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/user.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/users.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/users/users.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/users.module.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,32 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/users/users/users.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/users/user.entity.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="e#0#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,8 +62,8 @@
         <option value="$PROJECT_DIR$/src/pages/users/users/users.service.ts" />
         <option value="$PROJECT_DIR$/src/pages/auth/auth.module.ts" />
         <option value="$PROJECT_DIR$/src/pages/users/users.controller.ts" />
-        <option value="$PROJECT_DIR$/src/main.ts" />
         <option value="$PROJECT_DIR$/src/pages/users/user.entity.ts" />
+        <option value="$PROJECT_DIR$/src/main.ts" />
       </list>
     </option>
   </component>
@@ -135,19 +91,6 @@
               <item name="app-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="app-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -200,7 +143,7 @@
       <updated>1545902727774</updated>
       <workItem from="1545902738098" duration="735000" />
       <workItem from="1545986397777" duration="694000" />
-      <workItem from="1546072941331" duration="28637000" />
+      <workItem from="1546072941331" duration="29998000" />
     </task>
     <task id="LOCAL-00001" summary="update controller">
       <created>1546073015352</created>
@@ -237,15 +180,21 @@
       <option name="project" value="LOCAL" />
       <updated>1546502689176</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update">
+      <created>1546589880806</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1546589880806</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30066000" />
+    <option name="totallyTimeSpent" value="31427000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="862" y="0" width="1616" height="871" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1539924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -262,7 +211,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006337" side_tool="true" weight="0.2264151" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49936628" visible="true" weight="0.18995929" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49936628" visible="true" weight="0.393531" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -359,13 +308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/articles/articles.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -390,20 +332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/auth/auth.entity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/articles/article.entity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
@@ -501,16 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
@@ -518,6 +436,30 @@
           <folding>
             <element signature="e#0#72#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/users/user.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/auth/auth.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/articles/article.entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -531,12 +473,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/users/user.entity.ts">
+    <entry file="file://$PROJECT_DIR$/src/pages/articles/articles.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
-            <element signature="e#0#87#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
