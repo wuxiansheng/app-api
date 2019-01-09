@@ -11,6 +11,7 @@ import { MemberModule } from './pages/member/member.module';
 import { ArticlesModule } from './pages/articles/articles.module';
 import { CompanyModule } from './pages/company/company.module';
 import { Loggermiddleware } from './middleware/loggermiddleware';
+import { CustomerController } from './pages/customer/customer.controller';
 
 
 @Module({
@@ -24,7 +25,7 @@ import { Loggermiddleware } from './middleware/loggermiddleware';
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
     synchronize: true,
   }), AdminModule, AuthModule, CommentModule, RabcModule, MemberModule, ArticlesModule, CompanyModule],
-  controllers: [AppController],
+  controllers: [AppController, CustomerController],
   providers: [AppService],
 })
 export class AppModule implements NestModule {
