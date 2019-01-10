@@ -10,8 +10,9 @@ import { RabcModule } from './pages/rabc/rabc.module';
 import { MemberModule } from './pages/member/member.module';
 import { ArticlesModule } from './pages/articles/articles.module';
 import { CompanyModule } from './pages/company/company.module';
-import { Loggermiddleware } from './middleware/loggermiddleware';
 import { CustomerController } from './pages/customer/customer.controller';
+import { ProductController } from './pages/product/product.controller';
+import { ConfigModule } from './config/config.module';
 
 
 @Module({
@@ -24,12 +25,12 @@ import { CustomerController } from './pages/customer/customer.controller';
     database: 'nestdb',
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
     synchronize: true,
-  }), AdminModule, AuthModule, CommentModule, RabcModule, MemberModule, ArticlesModule, CompanyModule],
-  controllers: [AppController, CustomerController],
+  }), AdminModule, AuthModule, CommentModule, RabcModule, MemberModule, ArticlesModule, CompanyModule, ConfigModule],
+  controllers: [AppController, CustomerController, ProductController],
   providers: [AppService],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(Loggermiddleware);
+    consumer.apply();
   }
 }
