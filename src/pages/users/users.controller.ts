@@ -3,7 +3,9 @@ import { UsersService } from './users/users.service';
 import { UserEntity } from './user.entity';
 import { ApiException } from '../../common/exceptions/api.exception';
 import { ApiErrorCode } from '../../common/enums/api-error-code.enum';
-
+import { ApiUseTags, ApiBearerAuth } from '@nestjs/swagger';
+@ApiUseTags('用户')
+@ApiBearerAuth()
 @Controller('api/v1/users')
 export class UsersController {
     constructor(private readonly usersService: UsersService) {}

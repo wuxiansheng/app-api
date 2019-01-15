@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, JoinTable, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { UserEntity } from '../users/user.entity';
 
 @Entity()
 export class AuthEntity {
@@ -11,9 +12,12 @@ export class AuthEntity {
   @Column()
   email: string;
   @Column()
-  phone: string;
+  phone: number;
   @Column()
   identityType: string; // 授权类型
+  @OneToOne(type => UserEntity, userEntity => userEntity.id)
+  @JoinTable()
+  user: UserEntity;
   @Column()
   indentifier: string; // 授权标识ID
   @Column()
