@@ -26,6 +26,8 @@
     "@nestjs/passport": "^5.1.0",
     "@nestjs/swagger": "^2.5.1",
     "@nestjs/typeorm": "^5.2.2",
+    "@types/crypto-js": "^3.1.43",
+    "crypto-js": "^3.1.9-1",
     "csurf": "^1.9.0",
     "dotenv": "^6.2.0",
     "helmet": "^3.15.0",
