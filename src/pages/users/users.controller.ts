@@ -14,24 +14,20 @@ export class UsersController {
         // 删除
        return await this.usersService.findAll();
     }
-    @Get('/:id')
-  async  findById(@Param('id') params ): Promise<UserEntity> {
-      const id =  parseInt(params.id);
-      if (isNaN(id) || typeof id !== 'number' || id > 0) {
+    @Get(':id')
+  async  findById(@Param('id') id ): Promise<UserEntity> {
+      const userId =  parseInt(id);
+      if (isNaN(userId) || typeof userId !== 'number' || userId > 0) {
         throw  new ApiException('用户id无效', ApiErrorCode.USER_ID_INVALID, HttpStatus.BAD_REQUEST);
       }
       return await  this.usersService.findById(id);
     }
-    @Post()
-  async  create(@Body() user): Promise<UserEntity> {
-      return null;
+    @Put(':id')
+  async editUser(@Param()id, @Body() user: UserEntity) {
+      return await this.usersService.update(id);
     }
-    @Put()
-  async editUser(id: number) {
-      return await  this.usersService.update(id);
-    }
-    @Delete()
-  async deleteUser(id: number) {
+    @Delete(':id')
+  async deleteUser(@Param('id')id) {
       return await  this.usersService.delet(id);
     }
 }
